@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.profile{
+    display: flex;
+}
+
+.profileright{
+    flex: 9;
+}
+
+.profilerightbottom{
+    display: flex;
+}
+
+.profilecover{
+    height: 320px;
+    position: relative;
+}
+
+.profilecoverimg{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.profileuserimage{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 150px;
+    border: 3px solid white;
+    background-color: rgb(227, 227, 227);
+}
+
+.profileinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileinfoname{
+    font-size: 24px;
+}
+
+.profileinfodesc{
+    font-weight: 300;
+    padding: 10px 20px;
+}
+
+.profileinfoandfollowbtn{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5%;
+}
+
+.followorunfllowbtn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight:700;
+    background-color: green;
+    margin-right: 20px;
+    color: white;
+    font-size: 18px;
+    transition: all .5s;
+}
+
+.followorunfllowbtn:hover{
+    background-color: rgb(0, 199, 0);
+}
