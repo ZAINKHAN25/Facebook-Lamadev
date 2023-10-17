@@ -82,8 +82,8 @@ export default function Profile() {
                 <div className="profileright">
                     <div className="profilerighttop">
                         <div className="profilecover">
-                            <img src={user.profilecoverimg || AvatarImg} />
-                            <img src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png" alt="" className="profileuserimage" />
+                            <img src={user.profilecoverimg || "https://i.pinimg.com/736x/2d/e8/82/2de882cd4f3992ada3d609e3a183f7a4.jpg"} alt="" className="profilecoverimg" />
+                            <img src={AvatarImg} alt="" className="profileuserimage" />
                         </div>
                         <div className="profileinfoandfollowbtn">
                             <div className="profileinfo">
