@@ -57,8 +57,8 @@ export default function Rightbar({ followings, profile, userinfoprop }) {
                 <img src="https://static.vecteezy.com/system/resources/thumbnails/013/057/701/small/ad-initial-letter-gold-calligraphic-feminine-floral-hand-drawn-heraldic-monogram-antique-vintage-style-luxury-logo-design-premium-vector.jpg" className='rightbarad' alt="" />
                 <h4 className="rightbartitle">Online Friends</h4>
                 <ul className="rightbarfriendlist">
-                    {users.map(u => (
-                        <Online key={u.id} user={u} />
+                    {users.map((u, i) => (
+                        <Online key={i} user={u} />
                     ))}
 
                 </ul>

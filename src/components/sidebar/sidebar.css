@@ -71,3 +71,9 @@
 }
 
 
+@media (max-width: 768px) {
+    .sidebar{
+        position: static;
+        margin: 0 10%;
+    }
+}

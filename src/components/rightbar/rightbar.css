@@ -122,3 +122,9 @@
     cursor: pointer;
     margin-right: 5px;
 }
+
+@media (max-width: 768px) {
+    .rightbar{
+        margin: 0 10%;
+    }
+}
