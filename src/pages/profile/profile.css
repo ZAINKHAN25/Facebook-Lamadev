@@ -79,3 +79,13 @@
 .followorunfllowbtn:hover{
     background-color: rgb(0, 199, 0);
 }
+
+@media (max-width: 768px) {
+    .profile{
+        flex-direction: column;
+    }
+
+    .profilerightbottom{
+        flex-direction: column-reverse;
+    }
+}
