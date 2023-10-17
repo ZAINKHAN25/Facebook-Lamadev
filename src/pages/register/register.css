@@ -92,3 +92,31 @@
     font-size: 15px;
     color: green;
 }
+
+@media (max-width: 700px) {
+    .loginwrapper{
+        flex-direction: column;
+        width: 90% !important;
+    }
+    .loginbox{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .loginregisterbutton{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 300px) {
+    /* 40 */
+    .loginlogo{
+        font-size: 40px !important;
+    }
+    .logindesc{
+        font-size: 20px !important;
+    }
+    .loginwrapper{
+        width: 95% !important;
+    }
+
+}
