@@ -1,5 +1,6 @@
 import './topbar.css'
 import {Link, useNavigate} from 'react-router-dom'
+import AvatarImg from '../../images/Avatar-Image.png'
 
 export default function Topbar() {
     const navig = useNavigate()
@@ -35,7 +36,7 @@ export default function Topbar() {
                         <span className="topbariconbatch">13</span>
                     </div>
                 </div>
-                <img src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png" alt="" className="topbarimg" />
+                <img src={AvatarImg} alt="" className="topbarimg" />
                 <i title='logout' onClick={()=>{
                     localStorage.setItem("loginperson", JSON.stringify(''))
                     navig('/login')

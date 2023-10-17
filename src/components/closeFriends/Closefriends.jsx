@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import AvatarImg from '../../images/Avatar-Image.png'
 
 export default function Closefriends({ user }) {
     const Navig = useNavigate()
@@ -6,7 +7,7 @@ export default function Closefriends({ user }) {
         <li onClick={() => {
             Navig(`/profile/${user.username}`)
         }} className="sidebarfriend">
-            <img src={user.profilePicture || 'https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png'} alt="" className="sidebarfrndimg" />
+            <img src={user.profilePicture || AvatarImg} alt="" className="sidebarfrndimg" />
             <span className='sidebarfrndname'>{user.username}</span>
         </li>
     )

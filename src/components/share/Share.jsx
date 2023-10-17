@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import axios from 'axios'
 import './share.css'
+import AvatarImg from '../../images/Avatar-Image.png'
 
 export default function Share() {
     let [issharebuttontrue, setissharebtntrue] = useState(false);
@@ -24,7 +25,7 @@ export default function Share() {
         <div className='share'>
             <div className="sharewrapper">
                 <div className="sharetop">
-                    <img src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png" alt="" className="shareprofileimg" />
+                    <img src={AvatarImg} alt="" className="shareprofileimg" />
                     <input placeholder="What's in your mind Zain?" onChange={(e) => {
                         if (e.target.value === '') {
                             setissharebtntrue(false)

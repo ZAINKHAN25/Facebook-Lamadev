@@ -3,6 +3,8 @@ import Rightbar from "../../components/rightbar/Rightbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Topbar from "../../components/topbar/Topbar";
 
+import AvatarImg from '../../images/Avatar-Image.png'
+
 import { useNavigate, useParams } from "react-router-dom";
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
@@ -80,7 +82,7 @@ export default function Profile() {
                 <div className="profileright">
                     <div className="profilerighttop">
                         <div className="profilecover">
-                            <img src={user.profilecoverimg || "https://i.pinimg.com/736x/2d/e8/82/2de882cd4f3992ada3d609e3a183f7a4.jpg"} alt="" className="profilecoverimg" />
+                            <img src={user.profilecoverimg || AvatarImg} />
                             <img src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png" alt="" className="profileuserimage" />
                         </div>
                         <div className="profileinfoandfollowbtn">

@@ -5,6 +5,7 @@ import './rightbar.css';
 // import { Users } from '../../dummyData.js';
 import Online from '../online/Online.jsx';
 import { useNavigate } from 'react-router-dom';
+import AvatarImg from '../../images/Avatar-Image.png'
 
 export default function Rightbar({ followings, profile, userinfoprop }) {
     const [userDataArray, setUserDataArray] = useState([]);
@@ -91,7 +92,7 @@ export default function Rightbar({ followings, profile, userinfoprop }) {
                             <div onClick={()=>{
                                 Navig(`/profile/${userData.username}`)
                             }} key={i} className="rightbarfollowing">
-                                <img src={userData.profilePicture || 'https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png'} alt="" className="rightbarfollowingimg" />
+                                <img src={userData.profilePicture || AvatarImg} alt="" className="rightbarfollowingimg" />
                                 <div className="rightbarfollowingname">
                                     {userData.username}
                                 </div>

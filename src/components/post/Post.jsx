@@ -2,6 +2,7 @@ import './post.css'
 import { useEffect, useState } from 'react'
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
+import AvatarImg from '../../images/Avatar-Image.png'
 
 
 
@@ -48,7 +49,7 @@ export default function Post({ post }) {
                     <div className="posttopleft" onClick={()=>{
                          Navig(`/profile/${user.username}`)
                     }}>
-                        <img className='postprofileimg' src={user?.profilePicture || 'https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png'} alt="" />
+                        <img className='postprofileimg' src={user?.profilePicture || AvatarImg} alt="" />
                         <span className="postusername">{user?.username}</span>
                         <span className="postdate">{post?.createdAt}</span>
                     </div>
